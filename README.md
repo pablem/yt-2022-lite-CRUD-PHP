@@ -1,1 +1,1 @@
-# yt-2022-lite-CRUD-PHP
+# Small project based on a youtube tutorial to learn OOP in PHP
