@@ -6,23 +6,23 @@
             "host" => "localhost",
             "user" => "root",
             "pass" => "",
-            "db" => "cruddfacilito"
+            "db" => "facilito"
         );
-        private $conx;
+        private $conexion;
         
         public function __construct()
         {
-            $this->conx = new \mysqli($this->datos["host"], $this->datos["user"], $this->datos["pass"],$this->datos["db"]);
+            $this->conexion = new \mysqli($this->datos["host"], $this->datos["user"], $this->datos["pass"],$this->datos["db"]);
         }
 
         public function ConsultaSimple($sql)
         {
-            $this->conx->query($sql);
+            $this->conexion->query($sql);
         }
 
         public function ConsultaRetorno($sql)
         {
-            return $this->conx->query($sql);
+            return $this->conexion->query($sql);
         }
 
     }
