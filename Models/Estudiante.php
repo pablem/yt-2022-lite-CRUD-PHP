@@ -57,5 +57,10 @@
             $sql = "SELECT t1.*,t2.nombre as nombre_seccion FROM estudiantes t1 INNER JOIN secciones t2 ON t1.id_seccion = t2.id WHERE t1.id='{$this->id}'";
             return mysqli_fetch_assoc($this->conexion->ConsultaRetorno($sql));
         }
+
+        public function hola()
+        {
+            echo "hola soy un estudiante";
+        }
    }
 ?>
