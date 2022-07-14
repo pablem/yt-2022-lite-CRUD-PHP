@@ -58,9 +58,9 @@
             return mysqli_fetch_assoc($this->conexion->ConsultaRetorno($sql));
         }
 
-        public function hola()
-        {
-            echo "hola soy un estudiante";
-        }
+        // public function hola()
+        // {
+        //     echo "hola soy un estudiante";
+        // }
    }
 ?>
